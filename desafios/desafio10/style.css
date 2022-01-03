@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@font-face{
+    font-family: android;
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #97a362a6;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #3bd985,#0c522f);
+    color: white;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.459);
+}
+
+#sessao_titulo{
+    text-align: center;
+}
+
+h1{
+    padding: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+#sessao_titulo > p{
+    text-indent: 0;
+    line-height: 25px;
+    padding-bottom: 40px;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+ul{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+nav > ul > li{
+    padding: 10px;
+    display: inline-block;
+
+}
+
+nav > ul > li:hover{
+    color: #145635;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.568);
+}
+
+nav > ul > li > a{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav > ul > li > a:hover{
+    color: #145635;
+}
+
+main{
+    width: 840px;
+    background-color: white;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 15px;
+}
+
+#texto{
+    margin: 0 20px 0 20px;
+}
+
+h2, h3{
+    font-family: android;
+    color: #145635;
+    margin: 15px 0;
+}
+
+h3{
+    background-image: linear-gradient(to right, #c8eed9, #ffff);
+}
+
+p{
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+.midia{
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    margin: 20px 0px;
+}
+
+#img_bugdroid{
+    margin-left: 250px;
+}
+
+main{
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.253);
+    border-radius: 0px 0px 10px 10px;
+}
+
+#info_adicionais{
+    border-radius: 0px 0px 10px 10px;
+}
+
+#info_adicionais{
+    margin: 0 20px 0 20px;
+    padding: 0 10px 30px 10px;
+    background-color: #c8eed9;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.253);
+}
+
+h4{
+    margin: 0 20px 0 20px;
+    padding: 15px 10px;
+    color: white;
+    background-color: #29a564;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.253);
+}
+
+#listas_doces{
+    margin: 15px 0 15px 20px;
+}
+
+#lista_2{
+    margin-left: 200px;
+}
+
+#listas_doces > ul > li{
+    padding-left: 20px;
+    list-style: none;
+    background-image: url('imagens/check1.png');
+    background-repeat: no-repeat;
+}
+
+#listas_doces > ul > li > abbr{
+    color: black;
+    text-decoration: underline;
+}
+
+#listas_doces > ul > li > abbr:hover{
+    cursor: help;
+}
+
+#agradecimento{
+    margin: 20px;
+    padding-bottom: 30px;
+}
+
+footer{
+    background-color: #0c522f;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.links_especiais{
+    color: #306a4c;
+    font-weight: bolder;
+}
+
+.links_especiais:hover{
+    text-decoration: underline;
+}
