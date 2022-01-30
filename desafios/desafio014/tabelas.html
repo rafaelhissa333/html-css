@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th{
+            font-weight: bolder;
+        }
+        td:hover{
+            color: white;
+            background-color: tomato;
+            cursor: pointer;
+        }
+        .titulo{
+            background-color: gray;
+            color: white;
+        }
+        .titulo > th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="|">
+        <table>
+            <thead class="titulo">
+                <tr>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="col">Disciplina</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td id="mat">Matemática</td>
+                    <td id="nota_mat1">0.0</td>
+                    <td id="nota_mat2">0.0</td>
+                    <td id="nota_mat3">0.0</td>
+                </tr>
+                <tr>
+                    <td id="fis">Física</td>
+                    <td id="nota_fis1">0.0</td>
+                    <td id="nota_fis2">0.0</td>
+                    <td id="nota_fis3">0.0</td>
+                </tr>
+                <tr>
+                    <td id="qui">Química</td>
+                    <td id="nota_qui1">0.0</td>
+                    <td id="nota_qui2">0.0</td>
+                    <td id="nota_qui3">0.0</td>
+                </tr>
+                <tr>
+                    <td id="bio">Biologia</td>
+                    <td id="nota_bio1">0.0</td>
+                    <td id="nota_bio2">0.0</td>
+                    <td id="nota_bio3">0.0</td>
+                </tr>
+                <tr class="titulo">
+                    <th colspan="4" scope="row">Média de Exatas</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td id="his">História</td>
+                    <td id="nota_his1">0.0</td>
+                    <td id="nota_his2">0.0</td>
+                    <td id="nota_his3">0.0</td>
+                </tr>
+                <tr>
+                    <td id="geo">Geografia</td>
+                    <td id="nota_geo1">0.0</td>
+                    <td id="nota_geo2">0.0</td>
+                    <td id="nota_geo3">0.0</td>
+                </tr>
+                <tr class="titulo">
+                    <th colspan="4" scope="row">Média de Humanas</th>
+                    <td>0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <script>
+        var mat = document.getElementById('mat')
+        mat.addEventListener('click', clicar1)
+        function clicar1(){
+            mat.style.backgroundColor = 'tomato'
+            mat.style.color = 'white'
+        }
+        var fis = document.getElementById('fis')
+        fis.addEventListener('click', clicar2)
+        function clicar2(){
+            fis.style.backgroundColor = 'tomato'
+            fis.style.color = 'white'
+        }
+        var qui = document.getElementById('qui')
+        qui.addEventListener('click', clicar3)
+        function clicar3(){
+            qui.style.backgroundColor = 'tomato'
+            qui.style.color = 'white'
+        }
+        var bio = document.getElementById('bio')
+        bio.addEventListener('click', clicar4)
+        function clicar4(){
+            bio.style.backgroundColor = 'tomato'
+            bio.style.color = 'white'
+        }
+        var his = document.getElementById('his')
+        his.addEventListener('click', clicar5)
+        function clicar5(){
+            his.style.backgroundColor = 'tomato'
+            his.style.color = 'white'
+        }
+        var geo = document.getElementById('geo')
+        geo.addEventListener('click', clicar6)
+        function clicar6(){
+            geo.style.backgroundColor = 'tomato'
+            geo.style.color = 'white'
+        }
+        var nota_mat1 = document.getElementById('nota_mat1')
+        nota_mat1.addEventListener('click', clicar7)
+        function clicar7(){
+            nota_mat1.style.backgroundColor = 'tomato'
+            nota_mat1.style.color = 'white'
+        }
+        var nota_mat2 = document.getElementById('nota_mat2')
+        nota_mat2.addEventListener('click', clicar8)
+        function clicar8(){
+            nota_mat2.style.backgroundColor = 'tomato'
+            nota_mat2.style.color = 'white'
+        }
+        var nota_mat3 = document.getElementById('nota_mat3')
+        nota_mat3.addEventListener('click', clicar9)
+        function clicar9(){
+            nota_mat3.style.backgroundColor = 'tomato'
+            nota_mat3.style.color = 'white'
+        }
+        var nota_fis1 = document.getElementById('nota_fis1')
+        nota_fis1.addEventListener('click', clicar10)
+        function clicar10(){
+            nota_fis1.style.backgroundColor = 'tomato'
+            nota_fis1.style.color = 'white'
+        }
+        var nota_fis2 = document.getElementById('nota_fis2')
+        nota_fis2.addEventListener('click', clicar11)
+        function clicar11(){
+            nota_fis2.style.backgroundColor = 'tomato'
+            nota_fis2.style.color = 'white'
+        }
+        var nota_fis3 = document.getElementById('nota_fis3')
+        nota_fis3.addEventListener('click', clicar12)
+        function clicar12(){
+            nota_fis3.style.backgroundColor = 'tomato'
+            nota_fis3.style.color = 'white'
+        }
+        var nota_qui1 = document.getElementById('nota_qui1')
+        nota_qui1.addEventListener('click', clicar13)
+        function clicar13(){
+            nota_qui1.style.backgroundColor = 'tomato'
+            nota_qui1.style.color = 'white'
+        }
+        var nota_qui2 = document.getElementById('nota_qui2')
+        nota_qui2.addEventListener('click', clicar14)
+        function clicar14(){
+            nota_qui2.style.backgroundColor = 'tomato'
+            nota_qui2.style.color = 'white'
+        }
+        var nota_qui3 = document.getElementById('nota_qui3')
+        nota_qui3.addEventListener('click', clicar15)
+        function clicar15(){
+            nota_qui3.style.backgroundColor = 'tomato'
+            nota_qui3.style.color = 'white'
+        }
+        var nota_bio1 = document.getElementById('nota_bio1')
+        nota_bio1.addEventListener('click', clicar16)
+        function clicar16(){
+            nota_bio1.style.backgroundColor = 'tomato'
+            nota_bio1.style.color = 'white'
+        }
+        var nota_bio2 = document.getElementById('nota_bio2')
+        nota_bio2.addEventListener('click', clicar17)
+        function clicar17(){
+            nota_bio2.style.backgroundColor = 'tomato'
+            nota_bio2.style.color = 'white'
+        }
+        var nota_bio3 = document.getElementById('nota_bio3')
+        nota_bio3.addEventListener('click', clicar18)
+        function clicar18(){
+            nota_bio3.style.backgroundColor = 'tomato'
+            nota_bio3.style.color = 'white'
+        }
+        var nota_his1 = document.getElementById('nota_his1')
+        nota_his1.addEventListener('click', clicar19)
+        function clicar19(){
+            nota_his1.style.backgroundColor = 'tomato'
+            nota_his1.style.color = 'white'
+        }
+        var nota_his2 = document.getElementById('nota_his2')
+        nota_his2.addEventListener('click', clicar20)
+        function clicar20(){
+            nota_his2.style.backgroundColor = 'tomato'
+            nota_his2.style.color = 'white'
+        }
+        var nota_his3 = document.getElementById('nota_his3')
+        nota_his3.addEventListener('click', clicar21)
+        function clicar21(){
+            nota_his3.style.backgroundColor = 'tomato'
+            nota_his3.style.color = 'white'
+        }
+        var nota_geo1 = document.getElementById('nota_geo1')
+        nota_geo1.addEventListener('click', clicar22)
+        function clicar22(){
+            nota_geo1.style.backgroundColor = 'tomato'
+            nota_geo1.style.color = 'white'
+        }
+        var nota_geo2 = document.getElementById('nota_geo2')
+        nota_geo2.addEventListener('click', clicar23)
+        function clicar23(){
+            nota_geo2.style.backgroundColor = 'tomato'
+            nota_geo2.style.color = 'white'
+        }
+        var nota_geo3 = document.getElementById('nota_geo3')
+        nota_geo3.addEventListener('click', clicar24)
+        function clicar24(){
+            nota_geo3.style.backgroundColor = 'tomato'
+            nota_geo3.style.color = 'white'
+        }
+    </script>
+</body>
+</html>
